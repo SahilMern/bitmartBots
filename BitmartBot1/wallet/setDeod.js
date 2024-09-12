@@ -104,7 +104,7 @@ const getUserWalletDetails = async () => {
   }
 };
 
-const setDeod = async () => {
+const setDeod1 = async () => {
   while (true) {
     await getUserWalletDetails();
     console.log(`USER DEOD WALLET BALANCING CHECKING AFTER 5 MIN`.underline);
@@ -112,6 +112,7 @@ const setDeod = async () => {
   }
 };
 
-setDeod();
+// setDeod();
+module.exports = {setDeod1}
 
 //! Note:- ISME USDT AND DEOD CHECK HOGA PAHLE AGAR DEOD KAM HUA TO USDT DEKE LEGA OR USDT BHI NAHI HUA TO ERROR DEGA MAIN AIM YE HAI KI DEOD KO BALANCE RAKHNA USDT SELL KARKE

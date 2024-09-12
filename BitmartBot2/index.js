@@ -61,7 +61,7 @@ async function place_order(side, symbol, size, price) {
   }
 }
 
-const main = async () => {
+const main2 = async () => {
   while (true) {
     try {
       const response = await axios.get(
@@ -158,7 +158,7 @@ const main = async () => {
         console.log("Price Range is Low".red);
       }
 
-      const delay = randomNumber(10, 15) * 1000;
+      const delay = randomNumber(6, 15) * 1000;
       console.log(`----Next Order After ${delay}, Make some patience---`.bgYellow);
   
       // TODO:- WAITING
@@ -171,4 +171,4 @@ const main = async () => {
   }
 };
 
-main();
+module.exports = {main2}

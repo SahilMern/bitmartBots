@@ -61,7 +61,7 @@ async function place_order(side, symbol, size, price) {
   }
 }
 
-const main = async () => {
+const sellCancel = async () => {
   while (true) {
     try {
       const response = await axios.get(
@@ -123,4 +123,5 @@ const main = async () => {
   }
 };
 
-main();
+// main();
+module.exports = sellCancel;

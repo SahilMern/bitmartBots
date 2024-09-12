@@ -112,7 +112,7 @@ const getUserWalletDetails = async () => {
   }
 };
 
-const setUsdt = async () => {
+const setUsdt1 = async () => {
   while (true) {
     await getUserWalletDetails();
     console.log(`USER USDT WALLET BALANCING CHECKING AFTER 5 MIN`.underline);
@@ -120,4 +120,5 @@ const setUsdt = async () => {
   }
 };
 
-setUsdt();
+// setUsdt();
+module.exports = {setUsdt1}
